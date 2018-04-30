@@ -1,3 +1,4 @@
+import { DishService } from './services/dish.service';
 import { MaterialModule } from '@angular/material';
 
 
@@ -31,7 +32,7 @@ import { DishdetailComponent } from './dishdetail/dishdetail.component';
     HttpModule,
    //FlexLayoutModule
   ],
-  providers: [],
+  providers: [DishService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
